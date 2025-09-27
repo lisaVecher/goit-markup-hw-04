@@ -3,6 +3,7 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+
 .logo-title {
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -63,6 +64,7 @@ ul {
 .address-list {
   font-style: normal;
 }
+
 .address-contact {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -151,6 +153,7 @@ ul {
 .our-team-list-item {
   background-color: #ffffff;
 }
+
 .our-team-employee-name {
   font-weight: 500;
   font-size: 20px;
@@ -215,6 +218,7 @@ footer {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
 }
+
 .logo-title-studio-footer {
   line-height: 1.1;
   letter-spacing: 0.03em;
@@ -270,6 +274,7 @@ img {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 /*Header*/
 
 .header-topline {
@@ -327,6 +332,7 @@ img {
   align-items: center;
   flex-direction: column;
 }
+
 .section-one-heading {
   display: flex;
   align-items: center;
@@ -395,6 +401,7 @@ img {
   text-align: center;
   margin-bottom: 8px;
 }
+
 .our-team-employee-job-title {
   text-align: center;
 }
@@ -426,11 +433,13 @@ img {
   border-left: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
 }
+
 /*Footer*/
 
 .footer {
   padding: 100px 0;
 }
+
 .container-footer {
   flex-direction: column;
 }
@@ -442,4 +451,8 @@ img {
 
 .footer-text {
   max-width: 264px;
+}
+
+.advantages-list-icon {
+  fill: currentColor;
 }
