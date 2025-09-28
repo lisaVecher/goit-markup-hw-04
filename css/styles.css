@@ -477,5 +477,12 @@ img {
   align-items: center;
   justify-content: center;
   gap: 24px;
+}
 
+.our-team-icon {
+  fill: #4d5ae5;
+}
+
+.our-team-icon:hover {
+  fill: #404bbf;
 }
