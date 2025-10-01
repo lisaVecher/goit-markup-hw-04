@@ -17,7 +17,8 @@ body {
 }
 
 .header-topline {
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -53,48 +54,30 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   padding-bottom: 4px;
-}
-
-.navigation-link-go-current {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #2e2f42;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  padding-bottom: 4px;
-  position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.navigation-link-go:hover,
 .navigation-link-go:focus {
   color: #404bbf;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-link-go:hover {
+.navigation-link-go.current {
   color: #404bbf;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
-.navigation-link-go-current:hover,
-.navigation-link-go-current:focus {
-  color: #404bbf;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.navigation-link-go-current::after {
+.navigation-link-go.current::after {
   content: "";
   width: 100%;
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
-  background-color: #404bbf;
   border-radius: 2px;
+  background-color: #404bbf;
 }
-
 
 ul {
   list-style-type: none;
@@ -114,14 +97,13 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
 .address-contact:hover,
 .address-contact:focus {
   color: #404bbf;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-one {
@@ -547,10 +529,9 @@ img {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-
-.overlay-text:hover,
-.overlay-text:focus {
-  transform: translateY(0%);
+.our-portfolio-list-item:hover .overlay-text,
+.our-portfolio-list-item:focus .overlay-text {
+  transform: translateY(0);
 }
 
 .our-portfolio-img {
