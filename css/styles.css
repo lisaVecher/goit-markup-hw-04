@@ -462,9 +462,6 @@ img {
 .our-team-list-info-container {
   padding: 32px 0;
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 24px;
 }
 
