@@ -84,17 +84,17 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation-link-go-current:active::after {
+.navigation-link-go-current::after {
+  content: "";
   width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #404bbf;
+  position: absolute;
   left: 0;
   bottom: -1px;
-  content: "";
-  position: absolute;
-  padding-bottom: 4px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
+
 
 ul {
   list-style-type: none;
@@ -435,9 +435,25 @@ img {
 
 /*Section 3 Our Team*/
 
+/*.icon-list {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}*/
+
 .icon-item {
   width: 40px;
   height: 40px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .our-team-heading {
@@ -454,12 +470,15 @@ img {
 .our-team-list-item {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-list-info-container {
   padding: 32px 0;
+  text-align: center;
 }
 
 .our-team-employee-name {
@@ -487,6 +506,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-team-link:hover,
@@ -496,7 +516,6 @@ img {
 
 .our-team-icon {
   fill: #f4f4fd;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*Section 4 Our Portfolio*/
