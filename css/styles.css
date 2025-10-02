@@ -4,6 +4,11 @@ body {
   background-color: #ffffff;
 }
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .logo-title {
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -118,6 +123,8 @@ ul {
     url(../images/people-office.jpg);
   background-position: center;
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-one-heading {
@@ -302,11 +309,6 @@ img {
   margin-right: auto;
 }
 
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
 /*Header*/
 
 .header-topline {
@@ -331,6 +333,7 @@ img {
 
 .navigation-link-go {
   padding: 24px 0;
+  display: block;
 }
 
 .logo-title {
@@ -367,7 +370,7 @@ img {
 .section-one-heading {
   display: flex;
   align-items: center;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
   max-width: 496px;
@@ -574,7 +577,6 @@ img {
 .footer-information {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 
 .container-footer {
@@ -590,10 +592,7 @@ img {
   max-width: 264px;
 }
 
-.social-media-container {
-  display: flex;
-  flex-direction: column;
-}
+.social-media-container {}
 
 .icons-list-footer {
   display: flex;
@@ -602,7 +601,6 @@ img {
 
 .media-text {
   color: #fff;
-  padding-bottom: 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -611,9 +609,6 @@ img {
 }
 
 .icon-footer-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40px;
   height: 40px;
 }
